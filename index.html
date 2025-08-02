@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Recommendation Chatbot</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0f2f5, #dbe9f4);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4b8df8, #0052cc);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    main p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #eef5ff;
+      margin: 10px auto;
+      padding: 12px 20px;
+      border-radius: 8px;
+      width: fit-content;
+      transition: all 0.3s ease;
+    }
+
+    ul li:hover {
+      background-color: #d4e5ff;
+      transform: scale(1.05);
+      cursor: default;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 Book Recommender Bot</h1>
+    <p>Your AI-powered guide to finding your next great read!</p>
+  </header>
+
+  <main>
+    <p>Ask me anything about books, like by:</p>
+    <ul>
+      <li>📖 Genre → "Suggest a mystery novel"</li>
+      <li>👩‍💼 Author → "Books by Dan Brown"</li>
+      <li>⭐ Rating → "Top-rated sci-fi books"</li>
+    </ul>
+    <p>The chatbot will appear shortly in the bottom right corner.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Book Recommender Chatbot. Built with 💙 and IBM Watson Assistant.
+  </footer>
+
+  <!-- 🔽 IBM Watson Assistant Chat Integration -->
+  <script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "YOUR_INTEGRATION_ID", // Replace with your ID
+        region: "YOUR_REGION", // eg: "us-south"
+        serviceInstanceID: "YOUR_INSTANCE_ID", // Replace with your ID
+        onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "d3e0a755-d409-498d-8e5d-c8e352494a0c", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "732e6646-35c2-4df4-bf15-3005c7a87682", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
