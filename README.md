@@ -43,7 +43,7 @@ A simple and interactive **genre-based book recommendation chatbot** built using
 
 ## 🚀 Live Demo
 
-👉 [Click here to try the chatbot live](https://your-github-username.github.io/your-repo-name/)  
+👉 [Click here to try the chatbot live](https://syedmohdaltamash.github.io/Book-Recommender-ChatBot/)  
 
 
 ---
