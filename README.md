@@ -28,7 +28,7 @@ A simple and interactive **genre-based book recommendation chatbot** built using
 
 ## 📷 Screenshot
 
-![screenshot](https://via.placeholder.com/800x400.png?text=Chatbot+Demo+Screenshot)
+![image alt](https://github.com/SyedMohdAltamash/Book-Recommender-ChatBot/blob/main/Book%20Recommendation%20Bot.png?raw=true)
 
 
 ---
